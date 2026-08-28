@@ -1,0 +1,203 @@
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background-color: #90C7E3;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+    border: 1px solid #000033;
+    display: grid;
+    grid-template: "header header header" 100px 
+                "nav nav  nav" auto
+                "main main aside" auto 
+                "footer footer footer" 65px
+                / 175px 1fr  36%; ; 
+}
+
+#wrapper-services {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background-color: #90C7E3;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+    border: 1px solid #000033;
+    display: grid;
+    grid-template: "header header" 100px 
+                "nav nav" auto
+                "main main" auto 
+                "footer footer" 65px
+                / 175px 1fr; ; 
+}
+
+#wrapper-contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    background-color: #90C7E3;
+    box-shadow: 3px 3px 3px #333333;
+    border: 1px solid #000033;
+    display: grid;
+    grid-template: "header header" 100px 
+                "nav nav" auto
+                "main main" auto 
+                "footer footer" 65px
+                / 175px 1fr; ; 
+}
+body {
+    background-color: #f6ffdf;
+    color: #63685b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #2eb42e;
+    color: #FFFFFF;
+    background-image: url(Images/OIP.png);
+    background-repeat: repeat-x;
+    background-position: right;
+    background-size: 10%;
+    line-height: 400%;
+    text-indent: 1em;
+    grid-area: header;
+    text-align: center;
+    font-size: large;
+}
+nav {
+    background-color: #323da1;
+    font-weight: bold;
+    grid-area: nav;
+}
+nav a {
+    text-decoration: none;
+    color: #1cf000;
+    font-size: xx-large;
+    transition-property: all;
+    transition-duration: 2s;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav a:visited {
+    color: #FFFFFF;
+}
+nav a:hover {
+    color: #ff2424;
+}
+h1 {
+    margin-bottom: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    padding-left: 12px;
+}
+h2 {
+    color: #1976D2;
+    font-family: Georgia, "Times New Roman", serif;
+    padding-left: 12px;
+}
+h3 {
+    color: #1976D2;
+    font-family: Georgia, "Times New Roman", serif;
+    padding-left: 12px;
+}
+h4 {
+    color: #1976D2;
+    font-family: Georgia, "Times New Roman", serif;
+    padding-left: 12px;  
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    grid-area: footer;
+    background-color: #9d9dff;
+    color: #000000;
+    padding-top: 15px;
+    font-size: large;
+}
+#FirstImage {
+    background-image: url(Images/pexels-joel-hagele-2160986215-37554739.jpg);
+    height: 340px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#SecondImage {
+    background-image: url(Images/lines.jpg);
+    height: 340px;
+    width: 50%;
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    margin-bottom: -84px;
+}
+#Area-of-Work {
+    background-image: url(Images/AreaOfWorkSS.jpg);
+    height: 340px;
+    width: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+main {
+    background-image: linear-gradient(to bottom, #ffffff, #90C7E3);
+    grid-area:main;
+    background-repeat: no-repeat;
+}
+aside {
+    background-image: linear-gradient(to top, #ffffff, #32ffee);
+    grid-area:aside;
+    background-repeat: no-repeat;
+}
+p {
+    padding-left: 12px;
+    font-size: medium;
+}
+table {
+    border: 2px solid #09ff00;
+    border-collapse: collapse;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 0;
+    width: auto;
+    min-width: 600px;
+}
+td, th {
+    padding: 0.5em;
+    border: 2px solid #6e1919; 
+}
+td {
+    text-align: center;
+}
+.text {
+    text-align: left;
+}
+tr:nth-of-type(odd) {
+    background-color: #c4aaff;
+}
+.ptable {
+    text-align: center;
+    margin-bottom: 0;
+}
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 140px;
+    padding-right: 5px;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    margin-left: 140px;
+}
